@@ -23,6 +23,10 @@ let package = Package(
         .package(
             url: "https://github.com/kirualex/SwiftyGif.git",
             "5.4.4" ..< "6.0.0"
+        ),
+        .package(
+            url: "https://github.com/mixpanel/mixpanel-swift",
+            "4.1.4" ..< "4.2.0"
         )
     ],
     targets: [
@@ -33,7 +37,8 @@ let package = Package(
             dependencies: [
                 .target(name: "GlassesOnSDK"),
                 .product(name: "Lottie", package: "lottie-ios"),
-                .product(name: "SwiftyGif", package: "SwiftyGif")
+                .product(name: "SwiftyGif", package: "SwiftyGif"),
+                .product(name: "Mixpanel", package: "mixpanel-swift")
             ]
         ),
         .binaryTarget(
