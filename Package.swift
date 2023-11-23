@@ -23,11 +23,11 @@ let package = Package(
         .package(
             url: "https://github.com/kirualex/SwiftyGif.git",
             "5.4.4" ..< "6.0.0"
-        ),
-        .package(
-            url: "https://github.com/mixpanel/mixpanel-swift",
-            "4.1.4" ..< "4.2.0"
-        )
+        ) //,
+//        .package(
+//            url: "https://github.com/mixpanel/mixpanel-swift",
+//            "4.1.4" ..< "4.2.0"
+//        )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -37,14 +37,14 @@ let package = Package(
             dependencies: [
                 .target(name: "GlassesOnSDK"),
                 .product(name: "Lottie", package: "lottie-ios"),
-                .product(name: "SwiftyGif", package: "SwiftyGif"),
-                .product(name: "Mixpanel", package: "mixpanel-swift")
+                .product(name: "SwiftyGif", package: "SwiftyGif") //,
+//                .product(name: "Mixpanel", package: "mixpanel-swift")
             ]
         ),
         .binaryTarget(
             name: "GlassesOnSDK",
-            url: "https://glasseson.jfrog.io/artifactory/luna-glasseson-sdk-ios-local/5.44.0/GlassesOnSDK.xcframework.zip",
-            checksum: "89ea02cd75365897026561a295a0b4337124fe237d2b6668888cb9a51bbe353a"
+            url: "https://glasseson.jfrog.io/artifactory/luna-glasseson-sdk-ios-local/5.45.0/GlassesOnSDK.xcframework.zip",
+            checksum: "fc8693634753a32678efb907562b8a0448583303335a74ce83e37a103a782c00"
         )
     ]
 )

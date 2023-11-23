@@ -10,15 +10,6 @@
       }
     },
     {
-      "identity" : "mixpanel-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mixpanel/mixpanel-swift",
-      "state" : {
-        "revision" : "8ce81c8ed451d8aa5ede028e3838fd41e67938c9",
-        "version" : "4.1.4"
-      }
-    },
-    {
       "identity" : "swiftygif",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kirualex/SwiftyGif.git",
