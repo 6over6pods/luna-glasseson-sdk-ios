@@ -23,7 +23,11 @@ let package = Package(
         .package(
             url: "https://github.com/kirualex/SwiftyGif.git",
             "5.4.4" ..< "6.0.0"
-        ) 
+        ),
+        .package(
+            url: "https://github.com/6over6/glasseson-ios-commons",
+            branch: "develop"
+        )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -33,7 +37,9 @@ let package = Package(
             dependencies: [
                 .target(name: "GlassesOnSDK"),
                 .product(name: "Lottie", package: "lottie-ios"),
-                .product(name: "SwiftyGif", package: "SwiftyGif") //,
+                .product(name: "SwiftyGif", package: "SwiftyGif"),
+                .product(name: "Logger.Open", package: "glasseson-ios-commons")
+                //,
 //                .product(name: "Mixpanel", package: "mixpanel-swift")
             ]
         ),
