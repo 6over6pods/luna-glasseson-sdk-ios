@@ -13,40 +13,20 @@ let package = Package(
             name: "GlassesOnSDK",
             targets: ["GlassesOnWrapper"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-//        .package(
-//            url: "https://github.com/airbnb/lottie-ios.git",
-//            exact: "3.1.3"
-//        ),
-//        .package(
-//            url: "https://github.com/kirualex/SwiftyGif.git",
-//            "5.4.4" ..< "6.0.0"
-//        ),
-//        .package(
-//            url: "https://github.com/6over6/glasseson-ios-commons",
-//            branch: "develop"
-//        )
-    ],
+    
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "GlassesOnWrapper",
             dependencies: [
-                .target(name: "GlassesOnSDK"),
-//                .product(name: "Lottie", package: "lottie-ios"),
-//                .product(name: "SwiftyGif", package: "SwiftyGif"),
-//                .product(name: "Logger.Open", package: "glasseson-ios-commons")
-                //,
-//                .product(name: "Mixpanel", package: "mixpanel-swift")
+                .target(name: "GlassesOnSDK")
             ]
         ),
         .binaryTarget(
             name: "GlassesOnSDK",
-            url: "https://glasseson.jfrog.io/artifactory/luna-glasseson-sdk-ios-local/1.99.0-2496/GlassesOnSDK.xcframework.zip",
-            checksum: "61be469acada5d57a15dcb138e17d3d270dcfc0234e6ae90de6032f7c8b172f7"
+            url: "https://glasseson.jfrog.io/artifactory/luna-glasseson-sdk-ios-local/5.54.2-2539/GlassesOnSDK.xcframework.zip",
+            checksum: "d64a00b5cc67c5bda4d98c5176dd7810c73328eb52c2c91f8245658b7a8a5471"
         )
     ]
 )
