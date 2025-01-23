@@ -17,8 +17,8 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(
-            url: "https://github.com/airbnb/lottie-ios.git",
-            exact: "3.1.3"
+            url: "https://github.com/airbnb/lottie-spm.git",
+            "4.5.1" ..< "4.6.0"
         ),
         .package(
             url: "https://github.com/kirualex/SwiftyGif.git",
@@ -32,7 +32,7 @@ let package = Package(
             name: "GlassesOnWrapper",
             dependencies: [
                 .target(name: "GlassesOnSDK"),
-                .product(name: "Lottie", package: "lottie-ios"),
+                .product(name: "Lottie", package: "lottie-spm"),
                 .product(name: "SwiftyGif", package: "SwiftyGif") //,
 //                .product(name: "Mixpanel", package: "mixpanel-swift")
             ]
