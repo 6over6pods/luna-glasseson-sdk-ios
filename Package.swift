@@ -22,7 +22,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/kirualex/SwiftyGif.git",
-            exact: "5.4.4"
+            exact: "5.4.5"
         )
     ],
     targets: [
