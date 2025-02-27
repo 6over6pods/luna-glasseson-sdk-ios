@@ -19,10 +19,6 @@ let package = Package(
         .package(
             url: "https://github.com/airbnb/lottie-spm.git",
             exact: "4.5.1"
-        ),
-        .package(
-            url: "https://github.com/kirualex/SwiftyGif.git",
-            exact: "5.4.5"
         )
     ],
     targets: [
@@ -32,9 +28,7 @@ let package = Package(
             name: "GlassesOnWrapper",
             dependencies: [
                 .target(name: "GlassesOnSDK"),
-                .product(name: "Lottie", package: "lottie-spm"),
-                .product(name: "SwiftyGif", package: "SwiftyGif") //,
-//                .product(name: "Mixpanel", package: "mixpanel-swift")
+                .product(name: "Lottie", package: "lottie-spm")
             ]
         ),
         .binaryTarget(
