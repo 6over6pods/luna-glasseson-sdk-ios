@@ -33,8 +33,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "GlassesOnSDK",
-            url: "https://glasseson.jfrog.io/artifactory/luna-glasseson-sdk-ios-local/5.62.0-2729/GlassesOnSDK.xcframework.zip",
-            checksum: "3f221e24a5eabe650b16d7d031990dd4f415d42ca787c682b4820cf6bc619fde"
+            url: "https://glasseson.jfrog.io/artifactory/luna-glasseson-sdk-ios-local/5.63.1-2956/GlassesOnSDK.xcframework.zip",
+            checksum: "38e23cbe0e8615486a24fc7447a4e892bc5434559ca223f93868da067de54ff1"
         )
     ]
 )
